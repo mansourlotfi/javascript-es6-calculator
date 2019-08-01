@@ -56,10 +56,6 @@ this.operation = undefined
 this.previusOperand = ''
 }
 
-getDisplayNumber(number){
-return number
-}
-
 updateDisplay(){
 this.currentOperandTextElement.innerHTML = this.currentOperand
 if (this.operation != null) {
@@ -69,8 +65,6 @@ if (this.operation != null) {
 }
 }
 }
-
-
 
 const numberButton = document.querySelectorAll('[data-number]');
 const operationButton = document.querySelectorAll('[data-operation]');
