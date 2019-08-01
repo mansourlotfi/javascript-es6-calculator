@@ -56,9 +56,17 @@ this.operation = undefined
 this.previusOperand = ''
 }
 
+getDisplayNumber(number){
+return number
+}
+
 updateDisplay(){
 this.currentOperandTextElement.innerHTML = this.currentOperand
-this.previusOperandTextElement.innerHTML = this.previusOperand
+if (this.operation != null) {
+    this.previusOperandTextElement.innerHTML = `${this.previusOperand} ${this.operation}`
+}else{
+    this.previusOperandTextElement.innerHTML = ''
+}
 }
 }
 
